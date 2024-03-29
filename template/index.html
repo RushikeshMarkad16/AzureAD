@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3498db;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Hello, Welcome to the Login Page</h2>
+        <p>Please click the button below to log in.</p>
+        <a href="http://localhost:8080/azure/saml/login">
+            <button type="button">Login with Azure AD SAML</button>
+        </a>
+        <a href="https://login.microsoftonline.com/9a09bc79-207d-410b-9c33-ef906c4c06b0/oauth2/v2.0/authorize?client_id=8f96ef1c-4310-4232-9d95-4fa354484315&redirect_uri=http://localhost:8080/auth-callback&response_type=code&scope=openid+profile+email&state=state">
+            <button type="button">Login with Azure AD OIDC</button>
+        </a>
+    </div>
+
+</body>
+</html>
